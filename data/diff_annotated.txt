@@ -1,0 +1,23 @@
+--------------------------------------------------------------------------------
+Files compared:   data/cachegrind_with_loops.out; data/cachegrind_without_loops.out
+Command:          ./a.out; ./a.out
+Data file:        data/diff.out
+Events recorded:  Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Events shown:     Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Event sort order: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Thresholds:       0.1 100 100 100 100 100 100 100 100
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+Ir            I1mr ILmr Dr          D1mr       DLmr Dw            D1mw DLmw 
+--------------------------------------------------------------------------------
+1,773,075,148  -14  -16 409,959,241 -2,185,893    0  -135,724,047   -7    0  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir            I1mr ILmr Dr            D1mr        DLmr    Dw            D1mw DLmw  file:function
+--------------------------------------------------------------------------------
+2,460,687,656    5    4   806,421,645  77,359,362  16,384         1,066    0    0  ???:void cacheBlocks::multiply<int>(Matrix<int> const&, Matrix<int> const&, Matrix<int>&)
+ -687,612,528  -20  -20  -396,462,408 -79,545,251 -16,384  -135,725,117   -5    0  ???:main
+

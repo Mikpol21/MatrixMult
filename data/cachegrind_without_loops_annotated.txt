@@ -1,0 +1,28 @@
+--------------------------------------------------------------------------------
+I1 cache:         32768 B, 64 B, 8-way associative
+D1 cache:         32768 B, 64 B, 8-way associative
+LL cache:         8388608 B, 64 B, 16-way associative
+Command:          ./a.out
+Data file:        data/cachegrind_without_loops.out
+Events recorded:  Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Events shown:     Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Event sort order: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Thresholds:       0.1 100 100 100 100 100 100 100 100
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+Ir            I1mr  ILmr  Dr          D1mr       DLmr   Dw        D1mw   DLmw   
+--------------------------------------------------------------------------------
+2,501,293,808 1,875 1,777 817,978,044 77,373,985 24,659 4,388,453 35,247 34,316  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir            I1mr ILmr Dr          D1mr       DLmr   Dw        D1mw   DLmw    file:function
+--------------------------------------------------------------------------------
+2,460,687,656    5    4 806,421,645 77,359,362 16,384     1,066      0      0  ???:void cacheBlocks::multiply<int>(Matrix<int> const&, Matrix<int> const&, Matrix<int>&)
+   16,709,568    3    3   4,194,304          3      2 1,572,864      0      0  /build/glibc-BHL3KM/glibc-2.31/stdlib/random_r.c:random_r
+   11,010,048    2    2   4,194,304          0      0 1,048,576      0      0  /build/glibc-BHL3KM/glibc-2.31/stdlib/random.c:random
+    5,775,398    2    2   1,049,614          0      0 1,048,584 32,769 32,768  ???:randomFill(Matrix<int>&)
+    2,621,440    1    1     524,288          0      0   524,288      0      0  /build/glibc-BHL3KM/glibc-2.31/stdlib/rand.c:rand
+

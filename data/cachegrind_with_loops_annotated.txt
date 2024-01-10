@@ -1,0 +1,31 @@
+--------------------------------------------------------------------------------
+I1 cache:         32768 B, 64 B, 8-way associative
+D1 cache:         32768 B, 64 B, 8-way associative
+LL cache:         8388608 B, 64 B, 16-way associative
+Command:          ./a.out
+Data file:        data/cachegrind_with_loops.out
+Events recorded:  Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Events shown:     Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Event sort order: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Thresholds:       0.1 100 100 100 100 100 100 100 100
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+Ir          I1mr  ILmr  Dr          D1mr       DLmr   Dw          D1mw   DLmw   
+--------------------------------------------------------------------------------
+728,218,660 1,889 1,793 408,018,803 79,559,878 24,659 140,112,500 35,254 34,316  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir          I1mr ILmr Dr          D1mr       DLmr   Dw          D1mw   DLmw    file:function
+--------------------------------------------------------------------------------
+687,612,592   25   25 396,462,419 79,545,253 16,384 135,725,139      5      0  ???:main
+ 16,709,568    3    3   4,194,304          3      2   1,572,864      0      0  /build/glibc-BHL3KM/glibc-2.31/stdlib/random_r.c:random_r
+ 11,010,048    2    2   4,194,304          0      0   1,048,576      0      0  /build/glibc-BHL3KM/glibc-2.31/stdlib/random.c:random
+  5,775,398    2    1   1,049,614          2      0   1,048,584 32,769 32,768  ???:randomFill(Matrix<int>&)
+  2,621,440    1    1     524,288          0      0     524,288      0      0  /build/glibc-BHL3KM/glibc-2.31/stdlib/rand.c:rand
+  1,052,497  292  271     525,861        170      8         481     24     13  ???:???
+  1,048,576    0    0     524,288          1      1           0      0      0  /build/glibc-BHL3KM/glibc-2.31/stdlib/../sysdeps/unix/sysv/linux/x86/lowlevellock.h:random
+  1,044,686   10   10     157,340      1,990  1,653      45,970     24      1  /build/glibc-BHL3KM/glibc-2.31/elf/dl-lookup.c:_dl_lookup_symbol_x
+
