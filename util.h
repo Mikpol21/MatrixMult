@@ -5,13 +5,13 @@
 template <typename T>
 struct Matrix
 {
-    const int N;
-    const int M;
-
 private:
     T *data;
 
 public:
+    const int N;
+    const int M;
+
     Matrix(const int N, const int M) : data(new T[N * M]), N(N), M(M) {}
 
     ~Matrix()

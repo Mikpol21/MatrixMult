@@ -2,7 +2,7 @@
 I1 cache:         32768 B, 64 B, 8-way associative
 D1 cache:         32768 B, 64 B, 8-way associative
 LL cache:         8388608 B, 64 B, 16-way associative
-Command:          ./withLoops
+Command:          ./build/withLoops
 Data file:        data/cachegrind_with_loops.out
 Events recorded:  Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw Bc Bcm Bi Bim
 Events shown:     Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw Bc Bcm Bi Bim
@@ -13,24 +13,18 @@ User annotated:
 Auto-annotation:  off
 
 --------------------------------------------------------------------------------
-Ir         I1mr  ILmr  Dr         D1mr   DLmr  Dw        D1mw   DLmw   Bc        Bcm    Bi      Bim 
+Ir            I1mr  ILmr  Dr            D1mr          DLmr    Dw         D1mw    DLmw    Bc         Bcm       Bi        Bim 
 --------------------------------------------------------------------------------
-41,092,755 1,749 1,694 12,073,803 14,576 8,381 4,381,527 35,237 34,345 5,033,035 50,065 529,514 472  PROGRAM TOTALS
+3,320,938,240 1,818 1,791 1,693,231,374 1,150,449,728 132,776 89,346,012 133,547 132,691 90,710,598 4,613,291 2,102,420 493  PROGRAM TOTALS
 
 --------------------------------------------------------------------------------
-Ir         I1mr ILmr Dr        D1mr  DLmr  Dw        D1mw   DLmw   Bc        Bcm    Bi      Bim  file:function
+Ir            I1mr ILmr Dr            D1mr          DLmr    Dw         D1mw    DLmw    Bc         Bcm       Bi        Bim  file:function
 --------------------------------------------------------------------------------
-16,709,568    3    3 4,194,304     3     2 1,572,864      0      0 2,604,528 33,838       0   0  /build/glibc-wuryBv/glibc-2.31/stdlib/random_r.c:random_r
-11,010,048    2    2 4,194,304     0     0 1,048,576      0      0 1,572,864      2       0   0  /build/glibc-wuryBv/glibc-2.31/stdlib/random.c:random
- 6,298,654    1    1 1,573,900     0     0 1,048,582 32,769 32,768   526,338  1,038       0   0  /home/mikoaj/Projects/MatrixMult/util.h:randomFill(Matrix<int>&)
- 2,621,440    1    1   524,288     0     0   524,288      0      0         0      0       0   0  /build/glibc-wuryBv/glibc-2.31/stdlib/rand.c:rand
- 1,051,966  245  235   525,710   160     9       432     22     12       159     54 525,287 136  ???:???
- 1,048,576    0    0   524,288     1     1         0      0      0         0      0       0   0  /build/glibc-wuryBv/glibc-2.31/stdlib/../sysdeps/unix/sysv/linux/x86/lowlevellock.h:random
- 1,016,204   10   10   153,189 1,943 1,624    44,878     20      1   116,902  2,218       0   0  /build/glibc-wuryBv/glibc-2.31/elf/dl-lookup.c:_dl_lookup_symbol_x
-   549,045   33   33   179,984 3,974   857    84,304     25      4    75,330  5,314     246   4  /build/glibc-wuryBv/glibc-2.31/elf/dl-lookup.c:do_lookup_x
-   275,002   27   27    58,786 2,914 2,431    21,555  1,675    933    54,988  1,095   3,479  71  /build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/x86_64/dl-machine.h:_dl_relocate_object
-   114,689    6    6    38,228   355   204    12,769     13      2    14,875     87       0   0  /build/glibc-wuryBv/glibc-2.31/elf/dl-lookup.c:check_match
-    91,157   10   10    30,888 2,765 1,804     6,892      3      0    11,621    122       0   0  /build/glibc-wuryBv/glibc-2.31/elf/do-rel.h:_dl_relocate_object
-    71,545   10   10    14,316 1,103   894        15      1      0    15,770  2,028       2   2  /build/glibc-wuryBv/glibc-2.31/elf/dl-addr.c:_dl_addr
-    69,493   51   42    17,774   168    64         0      0      0     8,211    390     110  68  /build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/strcmp.S:strcmp
+3,163,640,716   11   11 1,646,551,235 1,150,435,072 124,010 72,380,480       0       0 71,569,475 4,460,658         0   0  /home/mikoaj/Projects/MatrixMult/cacheBlocks.h:main
+   66,838,328    3    3    16,777,232             5       4  6,291,462       0       0 10,418,120   135,316         0   0  /build/glibc-wuryBv/glibc-2.31/stdlib/random_r.c:random_r
+   44,040,234    2    2    16,777,232             1       1  4,194,308       1       1  6,291,462         2         0   0  /build/glibc-wuryBv/glibc-2.31/stdlib/random.c:random
+   25,180,190    1    1     6,293,516             0       0  4,194,310 131,073 131,072  2,101,250     2,063         0   0  /home/mikoaj/Projects/MatrixMult/util.h:randomFill(Matrix<int>&)
+   10,485,770    1    1     2,097,154             0       0  2,097,154       0       0          0         0         0   0  /build/glibc-wuryBv/glibc-2.31/stdlib/rand.c:rand
+    4,197,914  261  257     2,098,622           168      46        456      22      13        170        62 2,098,175 146  ???:???
+    4,194,308    0    0     2,097,154             2       2          0       0       0          0         0         0   0  /build/glibc-wuryBv/glibc-2.31/stdlib/../sysdeps/unix/sysv/linux/x86/lowlevellock.h:random
 

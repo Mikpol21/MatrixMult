@@ -3,9 +3,9 @@
 
 int main()
 {
-    Matrix<int> A(512, 512);
-    Matrix<int> B(512, 512);
-    Matrix<int> C(512, 512);
+    Matrix<int> A(1024, 1024);
+    Matrix<int> B(1024, 1024);
+    Matrix<int> C(1024, 1024);
     randomFill(A);
     randomFill(B);
 #if loopImpl == 1
@@ -14,8 +14,8 @@ int main()
     cacheBlocks::multiply(A, B, C);
 #endif
 
-    int randI = rand() % 512;
-    int randJ = rand() % 512;
+    int randI = rand() % 1024;
+    int randJ = rand() % 1024;
     std::cout << C(randI, randJ) << std::endl;
     return 0;
 }
