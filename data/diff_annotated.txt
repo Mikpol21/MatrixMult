@@ -1,23 +1,57 @@
 --------------------------------------------------------------------------------
 Files compared:   data/cachegrind_with_loops.out; data/cachegrind_without_loops.out
-Command:          ./a.out; ./a.out
+Command:          ./withLoops; ./withoutLoops
 Data file:        data/diff.out
-Events recorded:  Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
-Events shown:     Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
-Event sort order: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
-Thresholds:       0.1 100 100 100 100 100 100 100 100
+Events recorded:  Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw Bc Bcm Bi Bim
+Events shown:     Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw Bc Bcm Bi Bim
+Event sort order: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw Bc Bcm Bi Bim
+Thresholds:       0.1 100 100 100 100 100 100 100 100 100 100 100 100
 Include dirs:     
 User annotated:   
 Auto-annotation:  off
 
 --------------------------------------------------------------------------------
-Ir            I1mr ILmr Dr          D1mr       DLmr Dw            D1mw DLmw 
+Ir  I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw Bc Bcm Bi Bim 
 --------------------------------------------------------------------------------
-1,773,075,148  -14  -16 409,959,241 -2,185,893    0  -135,724,047   -7    0  PROGRAM TOTALS
+209   -1   -1 56   -1   -1 24    1    0 47   1  4   0  PROGRAM TOTALS
 
 --------------------------------------------------------------------------------
-Ir            I1mr ILmr Dr            D1mr        DLmr    Dw            D1mw DLmw  file:function
+Ir  I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw Bc Bcm Bi Bim  file:function
 --------------------------------------------------------------------------------
-2,460,687,656    5    4   806,421,645  77,359,362  16,384         1,066    0    0  ???:void cacheBlocks::multiply<int>(Matrix<int> const&, Matrix<int> const&, Matrix<int>&)
- -687,612,528  -20  -20  -396,462,408 -79,545,251 -16,384  -135,725,117   -5    0  ???:main
+136    0    0 36    0    0 20    0    0 32   0  0   0  /build/glibc-wuryBv/glibc-2.31/libio/fileops.c:_IO_file_overflow@@GLIBC_2.2.5
+ 60    0    0 20    0    0  4    0    0 12   0  4   0  /build/glibc-wuryBv/glibc-2.31/libio/genops.c:_IO_default_xsputn
+ 16    0    0  0    0    0  0    0    0  4   0  0   0  /build/glibc-wuryBv/glibc-2.31/libio/libioP.h:_IO_default_xsputn
+ -3   -1   -1  0    0    0  0    0    0 -1   1  0   0  /build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strrchr-avx2.S:__strrchr_avx2
+  0    0    0  0   -1   -1  0    1    1  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/x86/dl-prop.h:_dl_process_pt_note
+  0    0    0  0    1    1  0   -1   -1  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/dl-load.c:open_path
+  0    0    0  0   -1   -1  0    1    1  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/dl-deps.c:_dl_map_object_deps
+  0    0    0  0    1    1  0   -1   -1  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/dl-load.c:open_verify.constprop.0
+  0    0    0  0   -1   -1  0    0    0  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/posix/dl-fileid.h:_dl_map_object_from_fd
+  0    0    0  0    1    0  0   -1    0  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/dl-reloc.c:_dl_relocate_object
+  0    0    0  0   -1    0  0    1    0  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/dl-addr.c:_dl_addr
+  0    0    0  0   -1    0  0    0    0  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/malloc/arena.c:ptmalloc_init.part.0
+  0    0    0  0    1    0  0    0    0  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/stdlib/getenv.c:getenv
+  0    0    0  0    1    0  0    0    0  0   0  0   0  ???:std::ios_base::Init::Init()
+  0    0    0  0    1    0  0    0    0  0   0  0   0  /home/mikoaj/Projects/MatrixMult/util.h:randomFill(Matrix<int>&)
+  0    0    0  0   -1    0  0    0    0  0   0  0   0  ???:std::locale::locale()
+  0    0    0  0   -1    0  0    0    0  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/rtld.c:dl_main
+  0    0    0  0    1    0  0    0    0  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/malloc/hooks.c:malloc_hook_ini
+  0    0    0  0   -1    0  0    0    0  0   0  0   0  /home/mikoaj/Projects/MatrixMult/assemblyDiffCode.cpp:main
+  0    0    0  0    0    0  0    2    2  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/rtld.c:handle_preload_list
+  0    0    0  0    0    0  0    2    2  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/dl-load.c:open_verify.constprop.1
+  0    0    0  0    0    0  0    1    1  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/dl-misc.c:_dl_name_match_p
+  0    0    0  0    0    0  0    1    1  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/misc/../sysdeps/unix/sysv/linux/mmap64.c:mmap
+  0    0    0  0    0    0  0   -1   -1  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/dl-object.c:_dl_new_object
+  0    0    0  0    0    0  0   -1   -1  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/dl-load.c:expand_dynamic_string_token
+  0    0    0  0    0    0  0   -1   -1  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/dl-error-skeleton.c:_dl_catch_exception
+  0    0    0  0    0    0  0   -1   -1  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/io/../sysdeps/unix/sysv/linux/open64_nocancel.c:__open_nocancel
+  0    0    0  0    0    0  0   -1   -1  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/dl-tunables.c:__GI___tunables_init
+  0    0    0  0    0    0  0   -1   -1  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/dl-hwcaps.c:_dl_important_hwcaps
+  0    0    0  0    0    0  0    1    1  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/dl-minimal.c:malloc
+  0    0    0  0    0    0  0   -1   -1  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/dl-load.c:_dl_map_object_from_fd
+  0    0    0  0    0    0  0   -1    1  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave
+  0    0    0  0    0    0  0    1    1  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/../elf/dl-sysdep.c:_dl_sysdep_start
+  0    0    0  0    0    0  0   -1   -1  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/dl-load.c:_dl_map_object
+  0    0    0  0    0    0  0    1    0  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86/cacheinfo.c:handle_intel.constprop.0
+  0    0    0  0    0    0  0    1    0  0   0  0   0  /build/glibc-wuryBv/glibc-2.31/elf/dl-lookup.c:do_lookup_x
 

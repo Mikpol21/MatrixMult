@@ -1,0 +1,20 @@
+# started on Fri Jan 12 11:59:11 2024
+
+
+ Performance counter stats for './withoutLoops' (100 runs):
+
+             43,66 msec task-clock                #    0,974 CPUs utilized            ( +-  0,62% )
+                 0      context-switches          #    0,000 /sec                   
+                 0      cpu-migrations            #    0,000 /sec                   
+             1 151      page-faults               #   25,817 K/sec                    ( +-  0,01% )
+       191 510 582      cycles                    #    4,296 GHz                      ( +-  0,55% )  (41,58%)
+       497 781 650      instructions              #    2,55  insn per cycle           ( +-  0,23% )  (59,90%)
+        16 761 084      branches                  #  375,951 M/sec                    ( +-  0,54% )  (69,06%)
+            52 128      branch-misses             #    0,31% of all branches          ( +- 37,94% )  (72,52%)
+       159 293 165      L1-dcache-loads           #    3,573 G/sec                    ( +-  0,16% )  (72,52%)
+        15 662 508      L1-dcache-load-misses     #    9,83% of all L1-dcache accesses  ( +-  0,41% )  (67,58%)
+            49 238      LLC-loads                 #    1,104 M/sec                    ( +-  1,74% )  (40,10%)
+               111      LLC-load-misses           #    0,18% of all LL-cache accesses  ( +-177,53% )  (36,64%)
+
+          0,044818 +- 0,000273 seconds time elapsed  ( +-  0,61% )
+

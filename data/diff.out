@@ -1,0 +1,1126 @@
+desc: Files compared:   data/cachegrind_with_loops.out; data/cachegrind_without_loops.out
+cmd:  ./withLoops; ./withoutLoops
+events:  Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw Bc Bcm Bi Bim
+fl=???
+fn=std::ctype<char>::ctype(unsigned short const*, bool, unsigned long)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-memmove.h
+fn=memmove
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=__gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::xsputn(char const*, long)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strlen-avx2.S
+fn=__strlen_avx2
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../elf/dl-tls.c
+fn=_dl_allocate_tls_init
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::__cxx11::numpunct<wchar_t>::_M_initialize_numpunct(__locale_struct*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+fn=memset
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=__gnu_cxx::stdio_sync_filebuf<wchar_t, std::char_traits<wchar_t> >::sync()
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-avx2.h
+fn=strchrnul
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/wmemset.c
+fn=wmemset
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::numpunct<wchar_t>::_M_initialize_numpunct(__locale_struct*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-memset.h
+fn=memset
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::locale::_Impl::_M_install_facet(std::locale::id const*, std::locale::facet const*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/memcmp.c
+fn=bcmp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/ifunc-avx-fma4.h
+fn=sin
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-misc.c
+fn=_dl_sysdep_read_whole_file
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::basic_ostream<wchar_t, std::char_traits<wchar_t> >::sentry::sentry(std::basic_ostream<wchar_t, std::char_traits<wchar_t> >&)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/posix/dl-fileid.h
+fn=_dl_map_object_from_fd
+0 0 0 0 0 -1 -1 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86/cacheinfo.c
+fn=init_cacheinfo
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/locale/newlocale.c
+fn=newlocale
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::locale::facet::_S_get_c_name()
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/e_exp.c
+fn=__exp_finite@GLIBC_2.15
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma.h
+fn=cosf
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-minimal.c
+fn=calloc
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/ifunc-avx2.h
+fn=wcscmp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-strcpy.h
+fn=stpncpy
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strcasecmp_l.c
+fn=strcasecmp_l
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-minimal.c
+fn=free
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../elf/dl-tls.c
+fn=_dl_determine_tlsoffset
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/iofwrite.c
+fn=fwrite
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-load.c
+fn=_dl_map_object_from_fd
+0 0 0 0 0 0 0 0 -1 -1 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-open.c
+fn=_dl_find_dso_for_object
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../elf/dl-sysdep.c
+fn=_dl_sysdep_start
+0 0 0 0 0 0 0 0 1 1 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/nptl/register-atfork.c
+fn=__unregister_atfork
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/x86_64/dl-machine.h
+fn=_dl_relocate_object
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/mempcpy.c
+fn=mempcpy
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/libioP.h
+fn=fwrite
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::locale::operator=(std::locale const&)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/stdlib/../sysdeps/unix/sysv/linux/x86/lowlevellock.h
+fn=__cxa_atexit
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/generic/dl-cache.h
+fn=_dl_load_cache_lookup
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strcspn.c
+fn=strcspn
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/../sysdeps/unix/sysv/linux/x86/lowlevellock.h
+fn=fwrite
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/e_log.c
+fn=__log_finite@GLIBC_2.15
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-lookup.c
+fn=_dl_lookup_symbol_x
+0 0 0 0 0 0 0 0 0 -1 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/misc/init-misc.c
+fn=__init_misc
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/wcscpy.c
+fn=wcscpy
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/stdlib/exit.c
+fn=exit
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-avx2.h
+fn=strnlen
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/misc/../sysdeps/unix/syscall-template.S
+fn=munmap
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/ifunc-avx-fma4.h
+fn=__atan2_finite@GLIBC_2.15
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-strcasecmp.h
+fn=strcasecmp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/wcslen.c
+fn=wcslen
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/fileops.c
+fn=_IO_file_setbuf@@GLIBC_2.2.5
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/stdlib/exit.c
+fn=__run_exit_handlers
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-load.c
+fn=_dl_init_paths
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma4.h
+fn=__acos_finite@GLIBC_2.15
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/ifunc-avx-fma4.h
+fn=__exp_finite@GLIBC_2.15
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::locale::facet::_S_get_c_locale()
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strchrnul.c
+fn=strchrnul
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::locale::locale(std::locale::_Impl*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-strcpy.h
+fn=strncpy
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-fini.c
+fn=_dl_fini
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/fileops.c
+fn=_IO_file_sync@@GLIBC_2.2.5
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../misc/sbrk.c
+fn=sbrk
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-strcasecmp.h
+fn=strcasecmp_l
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::ostream::flush()
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-sse4_2.h
+fn=strcspn
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/generic/ldsodefs.h
+fn=_dl_relocate_object
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=__libc_csu_init
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::__timepunct<char>::__timepunct(std::__timepunct_cache<char>*, unsigned long)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/x86_64/tls_get_addr.S
+fn=__tls_get_addr
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::ios_base::Init::Init()
+0 0 0 0 0 1 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/io/../sysdeps/unix/sysv/linux/close_nocancel.c
+fn=__GI___close_nocancel
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/e_logf.c
+fn=logf@@GLIBC_2.27
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/wctype/wctype_l.c
+fn=wctype_l
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-reloc.c
+fn=_dl_relocate_object
+0 0 0 0 0 1 0 0 -1 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/io/../sysdeps/unix/sysv/linux/wordsize-64/xstat.c
+fn=_xstat
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/iofflush.c
+fn=fflush
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::__timepunct<wchar_t>::__timepunct(std::__timepunct_cache<wchar_t>*, unsigned long)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/fileops.c
+fn=_IO_file_stat
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/x86/cpu-features.c
+fn=_dl_sysdep_start
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/memcmp-avx2-movbe.S
+fn=__memcmp_avx2_movbe
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strncase.c
+fn=strncasecmp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../elf/dl-sysdep.c
+fn=_dl_sysdep_start_cleanup
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/stdlib/secure-getenv.c
+fn=secure_getenv
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/io/../sysdeps/unix/sysv/linux/pread64_nocancel.c
+fn=__pread64_nocancel
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::basic_ostream<wchar_t, std::char_traits<wchar_t> >::flush()
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::moneypunct<char, false>::_M_initialize_moneypunct(__locale_struct*, char const*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strcasecmp.c
+fn=strcasecmp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-memmove.h
+fn=mempcpy
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/malloc/morecore.c
+fn=__default_morecore
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::__cxx11::messages<wchar_t>::messages(unsigned long)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/malloc/arena.c
+fn=sysmalloc
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::ios_base::_M_init()
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-avx2.h
+fn=memchr
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/io/../sysdeps/unix/sysv/linux/access.c
+fn=access
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/wcsmbs/./wcsmbsload.h
+fn=btowc
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/strcmp.S
+fn=strcmp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/malloc/malloc.c
+fn=sysmalloc
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/libioP.h
+fn=_IO_do_write@@GLIBC_2.2.5
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-object.c
+fn=_dl_add_to_namespace_list
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::codecvt<wchar_t, char, __mbstate_t>::codecvt(unsigned long)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/malloc/malloc.c
+fn=ptmalloc_init.part.0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-memmove.h
+fn=memcpy@@GLIBC_2.14
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/stdlib/cxa_atexit.c
+fn=__cxa_atexit
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/x86_64/dl-machine.h
+fn=_dl_start
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/stdlib/cxa_finalize.c
+fn=__cxa_finalize
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/x86/cpu-features.c
+fn=get_common_indices.constprop.0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/malloc/../sysdeps/unix/sysv/linux/x86/lowlevellock.h
+fn=tcache_init.part.0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/stdlib/../sysdeps/unix/sysv/linux/x86/lowlevellock.h
+fn=__run_exit_handlers
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::locale::~locale()
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/nptl/../sysdeps/unix/sysv/linux/x86/lowlevellock.h
+fn=__unregister_atfork
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-lookup.c
+fn=do_lookup_x
+0 0 0 0 0 0 0 0 1 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove.c
+fn=memmove
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-tunables.c
+fn=__tunable_get_val
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/e_asin.c
+fn=__acos_finite@GLIBC_2.15
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/malloc/malloc.c
+fn=free
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/malloc/malloc.c
+fn=malloc
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/./setup-vdso.h
+fn=dl_main
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/fileops.c
+fn=_IO_file_xsputn@@GLIBC_2.2.5
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=operator delete[](void*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/x86/dl-prop.h
+fn=dl_main
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::__cxx11::moneypunct<char, false>::_M_initialize_moneypunct(__locale_struct*, char const*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/setjmp/../sysdeps/x86_64/setjmp.S
+fn=__sigsetjmp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/csu/init-first.c
+fn=_init
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/io/../sysdeps/unix/sysv/linux/open64_nocancel.c
+fn=__open_nocancel
+0 0 0 0 0 0 0 0 -1 -1 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-cache.c
+fn=_dl_load_cache_lookup
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/ifunc-avx2.h
+fn=wmemchr
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/ctype/ctype-info.c
+fn=__ctype_init
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/stdlib/random.c
+fn=random
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/wmemchr.c
+fn=wmemchr
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/generic/ldsodefs.h
+fn=do_lookup_x
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/s_sincosf.c
+fn=sincosf
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-strcpy.h
+fn=strcpy
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-misc.c
+fn=_dl_name_match_p
+0 0 0 0 0 0 0 0 1 1 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/strdup.c
+fn=strdup
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/libioP.h
+fn=_IO_file_xsputn@@GLIBC_2.2.5
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strspn.c
+fn=strspn
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strncase_l.c
+fn=strncasecmp_l
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/rtld.c
+fn=rtld_lock_default_unlock_recursive
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/genops.c
+fn=_IO_cleanup
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma.h
+fn=exp2f@@GLIBC_2.27
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=__gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::sync()
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-avx2.h
+fn=memrchr
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/ifunc-wmemset.h
+fn=wmemset
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/genops.c
+fn=_IO_flush_all_lockp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::future_category()
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::__timepunct<wchar_t>::_M_initialize_timepunct(__locale_struct*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/filedoalloc.c
+fn=_IO_file_doallocate
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-error-skeleton.c
+fn=_dl_catch_exception
+0 0 0 0 0 0 0 0 -1 -1 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/libioP.h
+fn=_IO_cleanup
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../elf/dl-tls.c
+fn=_dl_add_to_slotinfo
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/stdlib/cxa_thread_atexit_impl.c
+fn=__call_tls_dtors
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/wcsmbs/btowc.c
+fn=btowc
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::locale::facet::_S_create_c_locale(__locale_struct*&, char const*, __locale_struct*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma.h
+fn=expf@@GLIBC_2.27
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/unix/sysv/linux/dl-vdso.h
+fn=dl_main
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../include/scratch_buffer.h
+fn=_dl_map_object_deps
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::__cxx11::messages<char>::messages(unsigned long)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/x86/dl-prop.h
+fn=_dl_process_pt_note
+0 0 0 0 0 -1 -1 0 1 1 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/e_asin.c
+fn=__asin_finite@GLIBC_2.15
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-minimal.c
+fn=malloc
+0 0 0 0 0 0 0 0 1 1 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/wcscmp.c
+fn=wcscmp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::numpunct<char>::_M_initialize_numpunct(__locale_struct*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-load.c
+fn=open_path
+0 0 0 0 0 1 1 0 -1 -1 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/e_pow.c
+fn=__pow_finite@GLIBC_2.15
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/iconv/gconv_simple.c
+fn=__gconv_btwoc_ascii
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-load.c
+fn=fillin_rpath
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=operator delete(void*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/get-dynamic-info.h
+fn=_dl_start
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-init.c
+fn=call_init.part.0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/wcschr.c
+fn=wcschr
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../elf/dl-tls.c
+fn=_dl_count_modids
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/vtables.c
+fn=check_stdfiles_vtables
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/stdlib/../sysdeps/unix/sysv/linux/x86/lowlevellock.h
+fn=__cxa_finalize
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/../sysdeps/unix/sysv/linux/x86/lowlevellock.h
+fn=fflush
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/malloc/hooks.c
+fn=malloc_hook_ini
+0 0 0 0 0 1 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/stpncpy.c
+fn=stpncpy
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/rtld.c
+fn=version_check_doit
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/libioP.h
+fn=fflush
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::error_category::~error_category()
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-sse4_2.h
+fn=strpbrk
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::locale::_Impl::_Impl(unsigned long)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-minimal.c
+fn=strsep
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma.h
+fn=logf@@GLIBC_2.27
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/x86_64/dl-machine.h
+fn=_dl_fixup
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::moneypunct<char, true>::_M_initialize_moneypunct(__locale_struct*, char const*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::uncaught_exception()
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-environ.c
+fn=_dl_next_ld_env_entry
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/libioP.h
+fn=_IO_default_setbuf
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-deps.c
+fn=_dl_map_object_deps
+0 0 0 0 0 -1 -1 0 1 1 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strrchr.c
+fn=rindex
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-avx2.h
+fn=rawmemchr
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/setjmp/../sysdeps/x86_64/bsd-_setjmp.S
+fn=_setjmp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/misc/sbrk.c
+fn=sbrk
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/libioP.h
+fn=_IO_file_doallocate
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-hwcaps.c
+fn=_dl_important_hwcaps
+0 0 0 0 0 0 0 0 -1 -1 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/misc/../sysdeps/unix/sysv/linux/x86_64/brk.c
+fn=brk
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/fileops.c
+fn=_IO_file_overflow@@GLIBC_2.2.5
+0 136 0 0 36 0 0 20 0 0 32 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma.h
+fn=log2f@@GLIBC_2.27
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-load.c
+fn=open_verify.constprop.0
+0 0 0 0 0 1 1 0 -1 -1 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/x86/dl-cet.c
+fn=_dl_cet_check
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-strcpy.h
+fn=strcat
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-avx2.h
+fn=rindex
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strchr.S
+fn=index
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-error-skeleton.c
+fn=_dl_catch_error
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-load.c
+fn=expand_dynamic_string_token
+0 0 0 0 0 0 0 0 -1 -1 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/unix/sysv/linux/x86/cpu-features.c
+fn=_dl_sysdep_start
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=operator new(unsigned long)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::moneypunct<wchar_t, true>::_M_initialize_moneypunct(__locale_struct*, char const*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::ostream::sentry::sentry(std::ostream&)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-strcpy.h
+fn=stpcpy
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-avx2.h
+fn=strlen
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/misc/../sysdeps/unix/sysv/linux/mmap64.c
+fn=mmap
+0 0 0 0 0 0 0 0 1 1 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/libioP.h
+fn=_IO_default_xsputn
+0 16 0 0 0 0 0 0 0 0 4 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-lookup.c
+fn=check_match
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/csu/../csu/libc-start.c
+fn=(below main)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/unix/sysv/linux/x86_64/brk.c
+fn=brk
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strcpy.c
+fn=strcpy
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma.h
+fn=sincosf
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::basic_ios<wchar_t, std::char_traits<wchar_t> >::_M_cache_locale(std::locale const&)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strrchr-avx2.S
+fn=__strrchr_avx2
+0 -3 -1 -1 0 0 0 0 0 0 -1 1 0 0
+fl=???
+fn=_start
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-cache.c
+fn=_dl_cache_libcmp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/x86/dl-hwcap.h
+fn=_dl_important_hwcaps
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma4.h
+fn=__asin_finite@GLIBC_2.15
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strchr.c
+fn=index
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::messages<char>::messages(unsigned long)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/rtld.c
+fn=init_tls
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strncpy.c
+fn=strncpy
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strlen.c
+fn=strlen
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/unix/sysv/linux/dl-sysdep.c
+fn=_dl_sysdep_start
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/unix/sysv/linux/dl-osinfo.h
+fn=dl_main
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-strcasecmp.h
+fn=strncasecmp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/e_exp2f.c
+fn=exp2f@@GLIBC_2.27
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/home/mikoaj/Projects/MatrixMult/util.h
+fn=main
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-version.c
+fn=_dl_check_all_versions
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/misc/../sysdeps/unix/syscall-template.S
+fn=mprotect
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/e_atan2.c
+fn=__atan2_finite@GLIBC_2.15
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../elf/dl-tls.c
+fn=_dl_next_tls_modid
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+fn=memcpy
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/../sysdeps/unix/sysv/linux/x86/lowlevellock.h
+fn=_IO_cleanup
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-profstub.c
+fn=_dl_mcount_wrapper_check
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86/cacheinfo.c
+fn=handle_intel.constprop.0
+0 0 0 0 0 0 0 0 1 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-tunables.h
+fn=__GI___tunables_init
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-error-skeleton.c
+fn=_dl_receive_error
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/x86_64/dl-trampoline.h
+fn=_dl_runtime_resolve_xsave
+0 0 0 0 0 0 0 0 -1 1 0 0 0 0
+fl=???
+fn=std::locale::locale()
+0 0 0 0 0 -1 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/genops.c
+fn=_IO_setb
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/ifunc-memcmp.h
+fn=wmemcmp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/s_sin.c
+fn=cos
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/malloc/arena.c
+fn=ptmalloc_init.part.0
+0 0 0 0 0 -1 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/malloc/arena.c
+fn=malloc_hook_ini
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/locale/uselocale.c
+fn=uselocale
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-strcasecmp.h
+fn=strncasecmp_l
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/posix/../sysdeps/unix/syscall-template.S
+fn=uname
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::locale::id::_M_id() const
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/ifunc-avx2.h
+fn=wcslen
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/rtld.c
+fn=_dl_start
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strncmp.c
+fn=strncmp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-lookup.c
+fn=_dl_setup_hash
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-misc.c
+fn=_dl_higher_prime_number
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/e_expf.c
+fn=expf@@GLIBC_2.27
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma.h
+fn=powf@@GLIBC_2.27
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/do-rel.h
+fn=_dl_relocate_object
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../elf/dl-tls.c
+fn=_dl_allocate_tls_storage
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::__cxx11::moneypunct<wchar_t, true>::_M_initialize_moneypunct(__locale_struct*, char const*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/../sysdeps/unix/sysv/linux/x86/lowlevellock.h
+fn=_IO_flush_all_lockp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/posix/../sysdeps/unix/sysv/linux/_exit.c
+fn=_Exit
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strlen.S
+fn=strlen
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/unix/sysv/linux/dl-vdso-setup.h
+fn=dl_main
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::codecvt<char, char, __mbstate_t>::codecvt(unsigned long)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/x86/dl-procinfo.h
+fn=_dl_load_cache_lookup
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/wcsnlen.c
+fn=wcsnlen
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/s_cosf.c
+fn=cosf
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/memcpy.c
+fn=memcpy@@GLIBC_2.14
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/memchr.c
+fn=memchr
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::__timepunct<char>::_M_initialize_timepunct(__locale_struct*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-sse4_2.h
+fn=strspn
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strcmp-avx2.S
+fn=__strncmp_avx2
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/unix/sysv/linux/dl-sysdep.c
+fn=_dl_discover_osversion
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/malloc/malloc.c
+fn=munmap_chunk
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=__cpu_indicator_init
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/genops.c
+fn=_IO_default_xsputn
+0 60 0 0 20 0 0 4 0 0 12 0 4 0
+fl=/build/glibc-wuryBv/glibc-2.31/setjmp/sigjmp.c
+fn=__sigjmp_save
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::basic_ios<char, std::char_traits<char> >::_M_cache_locale(std::locale const&)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::ctype<wchar_t>::ctype(unsigned long)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-version.c
+fn=_dl_check_map_versions
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strnlen.c
+fn=strnlen
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/memrchr.c
+fn=memrchr
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::ios_base::Init::~Init()
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-object.c
+fn=_dl_new_object
+0 0 0 0 0 0 0 0 -1 -1 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/./dl-map-segments.h
+fn=_dl_map_object_from_fd
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/malloc/malloc.c
+fn=_int_malloc
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::ios_base::ios_base()
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::messages<wchar_t>::messages(unsigned long)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/stpcpy.c
+fn=stpcpy
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/rtld.c
+fn=rtld_lock_default_lock_recursive
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/io/../sysdeps/unix/sysv/linux/read_nocancel.c
+fn=__read_nocancel
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-load.c
+fn=_dl_dst_count
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/../include/sys/sysmacros.h
+fn=_IO_file_doallocate
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/genops.c
+fn=_IO_doallocbuf
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/malloc/malloc.c
+fn=malloc_hook_ini
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/rtld.c
+fn=map_doit
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/stdlib/random_r.c
+fn=random_r
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/stdlib/cxa_atexit.c
+fn=__new_exitfn
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=operator new[](unsigned long)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/malloc/malloc.c
+fn=tcache_init.part.0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strcmp.c
+fn=strcmp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-load.c
+fn=_dl_map_object
+0 0 0 0 0 0 0 0 -1 -1 0 0 0 0
+fl=???
+fn=std::basic_ios<wchar_t, std::char_traits<wchar_t> >::init(std::basic_streambuf<wchar_t, std::char_traits<wchar_t> >*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/s_sin.c
+fn=sin
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::__cxx11::moneypunct<wchar_t, false>::_M_initialize_moneypunct(__locale_struct*, char const*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/do-rel.h
+fn=_dl_start
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-sort-maps.c
+fn=_dl_sort_maps
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::ctype<wchar_t>::_M_initialize_ctype()
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/e_powf.c
+fn=powf@@GLIBC_2.27
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma.h
+fn=sinf
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/rawmemchr.c
+fn=rawmemchr
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/genops.c
+fn=_IO_default_setbuf
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/strcspn.S
+fn=strcspn
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/libioP.h
+fn=_IO_flush_all_lockp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-addr.c
+fn=_dl_addr
+0 0 0 0 0 -1 0 0 1 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/ifunc-avx2.h
+fn=wcschr
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/ifunc-avx-fma4.h
+fn=cos
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/malloc/scratch_buffer_set_array_size.c
+fn=__libc_scratch_buffer_set_array_size
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::ctype<wchar_t>::_M_convert_to_wmask(unsigned short) const
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-load.c
+fn=open_verify.constprop.1
+0 0 0 0 0 0 0 0 2 2 0 0 0 0
+fl=/usr/include/c++/13/ostream
+fn=main
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-init.c
+fn=_dl_init
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/ifunc-avx-fma4.h
+fn=__log_finite@GLIBC_2.15
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-cache.c
+fn=_dl_unload_cache
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/wcsmbs/wctob.c
+fn=wctob
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+fn=mempcpy
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=???
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/io/../sysdeps/unix/sysv/linux/wordsize-64/fxstat.c
+fn=_fxstat
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86/cacheinfo.c
+fn=intel_check_word.isra.0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/home/mikoaj/Projects/MatrixMult/assemblyDiffCode.cpp
+fn=main
+0 0 0 0 0 -1 0 0 0 0 0 0 0 0
+fl=???
+fn=std::__cxx11::moneypunct<char, true>::_M_initialize_moneypunct(__locale_struct*, char const*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/libioP.h
+fn=_IO_doallocbuf
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-deps.c
+fn=openaux
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::moneypunct<wchar_t, false>::_M_initialize_moneypunct(__locale_struct*, char const*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../bits/stdlib-bsearch.h
+fn=intel_check_word.isra.0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/stdlib/../sysdeps/unix/sysv/linux/x86/lowlevellock.h
+fn=random
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma4.h
+fn=__pow_finite@GLIBC_2.15
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::error_category::error_category()
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=std::__cxx11::numpunct<char>::_M_initialize_numpunct(__locale_struct*)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/fileops.c
+fn=_IO_do_write@@GLIBC_2.2.5
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-debug.c
+fn=_dl_debug_state
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strpbrk.c
+fn=strpbrk
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/home/mikoaj/Projects/MatrixMult/util.h
+fn=randomFill(Matrix<int>&)
+0 0 0 0 0 1 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/stdlib/getenv.c
+fn=getenv
+0 0 0 0 0 1 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-debug.c
+fn=_dl_debug_initialize
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/e_log2f.c
+fn=log2f@@GLIBC_2.27
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/get-dynamic-info.h
+fn=_dl_map_object_from_fd
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/strcat.c
+fn=strcat
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/rtld.c
+fn=handle_preload_list
+0 0 0 0 0 0 0 0 2 2 0 0 0 0
+fl=???
+fn=std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/rtld.c
+fn=dl_main
+0 0 0 0 0 -1 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/memset.c
+fn=memset
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/dl-tunables.c
+fn=__GI___tunables_init
+0 0 0 0 0 0 0 0 -1 -1 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/io/../sysdeps/unix/sysv/linux/write.c
+fn=write
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/stdlib/rand.c
+fn=rand
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/libio/fileops.c
+fn=_IO_file_write@@GLIBC_2.2.5
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/get-dynamic-info.h
+fn=dl_main
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/x86/dl-cet.c
+fn=dl_cet_check
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/math/../sysdeps/x86_64/fpu/multiarch/s_sinf.c
+fn=sinf
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/./dl-load.h
+fn=_dl_map_object_from_fd
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/wcsmbs/../sysdeps/x86_64/multiarch/wmemcmp.c
+fn=wmemcmp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/multiarch/ifunc-memcmp.h
+fn=bcmp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=???
+fn=__cxa_get_globals
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+fl=/build/glibc-wuryBv/glibc-2.31/elf/../elf/dl-runtime.c
+fn=_dl_fixup
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+summary: 209 -1 -1 56 -1 -1 24 1 0 47 1 4 0

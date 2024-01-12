@@ -9,13 +9,13 @@ int main()
     randomFill(A);
     randomFill(B);
 #if loopImpl == 1
-    std::cout << "loopImpl\n";
     cacheBlocks::multiply2(A, B, C);
 #else
-    std::cout << "withoutLoops\n";
     cacheBlocks::multiply(A, B, C);
 #endif
-    std::cout << "C(0, 0) = " << C(0, 0) << "\n";
 
+    int randI = rand() % 512;
+    int randJ = rand() % 512;
+    std::cout << C(randI, randJ) << std::endl;
     return 0;
 }

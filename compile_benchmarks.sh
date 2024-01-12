@@ -1,13 +1,10 @@
 #!/bin/bash
 
-# Default compilation command
-compile_command="g++ multBenchmark.cpp -O3 -isystem benchmark/include -DCLS=\$(getconf LEVEL1_DCACHE_LINESIZE) -Lbenchmark/build/src -lbenchmark -lpthread -o multBenchmark"
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
 
-# Check if the -S flag is provided
-if [[ "$1" == "-S" ]]; then
-    # Generate assembly instead of compiling
-    compile_command="g++ -S multBenchmark.cpp -O3 -isystem benchmark/include -DCLS=\$(getconf LEVEL1_DCACHE_LINESIZE)"
-fi
+echo -e "${GREEN}Compiling with and without loops...${NC}"
 
-# Execute the compilation command
-eval "$compile_command"
+g++ multBenchmark.cpp -O3 -isystem benchmark/include -DCLS=$(getconf LEVEL1_DCACHE_LINESIZE) -Lbenchmark/build/src -lbenchmark -lpthread -o multBenchmark
+
+echo -e "${GREEN}Compiling completed${NC}"

@@ -33,12 +33,12 @@ static void BM_CacheBlocks(benchmark::State &state)
 {
     multiplyMatricesBenchmark<N, K, M, int>(state, cacheBlocks::multiply<int>);
 }
+BENCHMARK(BM_CacheBlocks);
 
 static void BM_CacheBlocksSimpleLoops(benchmark::State &state)
 {
     multiplyMatricesBenchmark<N, K, M, int>(state, cacheBlocks::multiply2<int>);
 }
 BENCHMARK(BM_CacheBlocksSimpleLoops);
-BENCHMARK(BM_CacheBlocks);
 
 BENCHMARK_MAIN();

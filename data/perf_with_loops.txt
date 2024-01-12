@@ -1,0 +1,20 @@
+# started on Fri Jan 12 11:59:06 2024
+
+
+ Performance counter stats for './withLoops' (100 runs):
+
+             47,74 msec task-clock                #    1,057 CPUs utilized            ( +-  0,53% )
+                 0      context-switches          #    0,000 /sec                   
+                 0      cpu-migrations            #    0,000 /sec                   
+             1 149      page-faults               #   25,587 K/sec                    ( +-  0,01% )
+       212 108 055      cycles                    #    4,723 GHz                      ( +-  0,45% )  (33,99%)
+       508 395 729      instructions              #    2,58  insn per cycle           ( +-  0,15% )  (50,75%)
+        14 553 090      branches                  #  324,081 M/sec                    ( +-  0,52% )  (59,12%)
+           617 947      branch-misses             #    3,66% of all branches          ( +-  3,89% )  (67,50%)
+       154 170 798      L1-dcache-loads           #    3,433 G/sec                    ( +-  0,19% )  (74,87%)
+        14 082 490      L1-dcache-load-misses     #    8,89% of all L1-dcache accesses  ( +-  0,50% )  (74,38%)
+            74 728      LLC-loads                 #    1,664 M/sec                    ( +-  1,93% )  (49,25%)
+             1 631      LLC-load-misses           #    2,47% of all LL-cache accesses  ( +-  7,01% )  (40,88%)
+
+          0,045149 +- 0,000254 seconds time elapsed  ( +-  0,56% )
+

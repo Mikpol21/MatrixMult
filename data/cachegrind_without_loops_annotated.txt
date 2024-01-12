@@ -2,27 +2,35 @@
 I1 cache:         32768 B, 64 B, 8-way associative
 D1 cache:         32768 B, 64 B, 8-way associative
 LL cache:         8388608 B, 64 B, 16-way associative
-Command:          ./a.out
+Command:          ./withoutLoops
 Data file:        data/cachegrind_without_loops.out
-Events recorded:  Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
-Events shown:     Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
-Event sort order: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
-Thresholds:       0.1 100 100 100 100 100 100 100 100
+Events recorded:  Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw Bc Bcm Bi Bim
+Events shown:     Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw Bc Bcm Bi Bim
+Event sort order: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw Bc Bcm Bi Bim
+Thresholds:       0.1 100 100 100 100 100 100 100 100 100 100 100 100
 Include dirs:     
 User annotated:   
 Auto-annotation:  off
 
 --------------------------------------------------------------------------------
-Ir            I1mr  ILmr  Dr          D1mr       DLmr   Dw        D1mw   DLmw   
+Ir         I1mr  ILmr  Dr         D1mr   DLmr  Dw        D1mw   DLmw   Bc        Bcm    Bi      Bim 
 --------------------------------------------------------------------------------
-2,501,293,808 1,875 1,777 817,978,044 77,373,985 24,659 4,388,453 35,247 34,316  PROGRAM TOTALS
+41,092,964 1,748 1,693 12,073,859 14,575 8,380 4,381,551 35,238 34,345 5,033,082 50,066 529,518 472  PROGRAM TOTALS
 
 --------------------------------------------------------------------------------
-Ir            I1mr ILmr Dr          D1mr       DLmr   Dw        D1mw   DLmw    file:function
+Ir         I1mr ILmr Dr        D1mr  DLmr  Dw        D1mw   DLmw   Bc        Bcm    Bi      Bim  file:function
 --------------------------------------------------------------------------------
-2,460,687,656    5    4 806,421,645 77,359,362 16,384     1,066      0      0  ???:void cacheBlocks::multiply<int>(Matrix<int> const&, Matrix<int> const&, Matrix<int>&)
-   16,709,568    3    3   4,194,304          3      2 1,572,864      0      0  /build/glibc-BHL3KM/glibc-2.31/stdlib/random_r.c:random_r
-   11,010,048    2    2   4,194,304          0      0 1,048,576      0      0  /build/glibc-BHL3KM/glibc-2.31/stdlib/random.c:random
-    5,775,398    2    2   1,049,614          0      0 1,048,584 32,769 32,768  ???:randomFill(Matrix<int>&)
-    2,621,440    1    1     524,288          0      0   524,288      0      0  /build/glibc-BHL3KM/glibc-2.31/stdlib/rand.c:rand
+16,709,568    3    3 4,194,304     3     2 1,572,864      0      0 2,604,528 33,838       0   0  /build/glibc-wuryBv/glibc-2.31/stdlib/random_r.c:random_r
+11,010,048    2    2 4,194,304     0     0 1,048,576      0      0 1,572,864      2       0   0  /build/glibc-wuryBv/glibc-2.31/stdlib/random.c:random
+ 6,298,654    1    1 1,573,900     1     0 1,048,582 32,769 32,768   526,338  1,038       0   0  /home/mikoaj/Projects/MatrixMult/util.h:randomFill(Matrix<int>&)
+ 2,621,440    1    1   524,288     0     0   524,288      0      0         0      0       0   0  /build/glibc-wuryBv/glibc-2.31/stdlib/rand.c:rand
+ 1,051,966  245  235   525,710   160     9       432     22     12       159     54 525,287 136  ???:???
+ 1,048,576    0    0   524,288     1     1         0      0      0         0      0       0   0  /build/glibc-wuryBv/glibc-2.31/stdlib/../sysdeps/unix/sysv/linux/x86/lowlevellock.h:random
+ 1,016,204   10   10   153,189 1,943 1,624    44,878     20      0   116,902  2,218       0   0  /build/glibc-wuryBv/glibc-2.31/elf/dl-lookup.c:_dl_lookup_symbol_x
+   549,045   33   33   179,984 3,974   857    84,304     26      4    75,330  5,314     246   4  /build/glibc-wuryBv/glibc-2.31/elf/dl-lookup.c:do_lookup_x
+   275,002   27   27    58,786 2,914 2,431    21,555  1,675    933    54,988  1,095   3,479  71  /build/glibc-wuryBv/glibc-2.31/elf/../sysdeps/x86_64/dl-machine.h:_dl_relocate_object
+   114,689    6    6    38,228   355   204    12,769     13      2    14,875     87       0   0  /build/glibc-wuryBv/glibc-2.31/elf/dl-lookup.c:check_match
+    91,157   10   10    30,888 2,765 1,804     6,892      3      0    11,621    122       0   0  /build/glibc-wuryBv/glibc-2.31/elf/do-rel.h:_dl_relocate_object
+    71,545   10   10    14,316 1,102   894        15      2      0    15,770  2,028       2   2  /build/glibc-wuryBv/glibc-2.31/elf/dl-addr.c:_dl_addr
+    69,493   51   42    17,774   168    64         0      0      0     8,211    390     110  68  /build/glibc-wuryBv/glibc-2.31/string/../sysdeps/x86_64/strcmp.S:strcmp
 

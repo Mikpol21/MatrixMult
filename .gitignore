@@ -2,3 +2,5 @@
 a.out
 benchmark
 multBenchmark
+withLoops
+withoutLoops
