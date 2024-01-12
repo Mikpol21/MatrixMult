@@ -16,7 +16,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall --std=c++11 -O3 -fPIC")
 # Dummy executable targets (replace with your actual targets)
 add_executable(withLoops diffCode.cpp)
 add_executable(withoutLoops diffCode.cpp)
-add_executable(multBenchmark multBenchmark.cpp)
+add_executable(benchmarkWithLoops multBenchmark.cpp)
+add_executable(benchmarkWithoutLoops multBenchmark.cpp)
 
 find_package(benchmark REQUIRED)
 
@@ -27,9 +28,13 @@ target_compile_options(withLoops PRIVATE -g ${COMMON_FLAGS} -DloopImpl=1)
 target_compile_options(withoutLoops PRIVATE -g ${COMMON_FLAGS} -DloopImpl=0)
 
 # Set compiler flags for multBenchmark target
-target_compile_options(multBenchmark PRIVATE ${COMMON_FLAGS})
 
-target_link_libraries(multBenchmark PRIVATE benchmark::benchmark)
+target_compile_options(benchmarkWithLoops PRIVATE ${COMMON_FLAGS} -DloopImpl=1)
+
+target_compile_options(benchmarkWithoutLoops PRIVATE ${COMMON_FLAGS} -DloopImpl=0)
+
+target_link_libraries(benchmarkWithLoops PRIVATE benchmark::benchmark)
+target_link_libraries(benchmarkWithoutLoops PRIVATE benchmark::benchmark)
 
 
 # Add custom target to display compilation completion message

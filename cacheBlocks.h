@@ -1,7 +1,9 @@
 #pragma once
-
 #include "util.h"
 #include <algorithm>
+#ifndef loopImpl
+#define loopImpl 1
+#endif
 
 namespace cacheBlocks
 {
@@ -11,7 +13,7 @@ namespace cacheBlocks
     {
         return std::max(static_cast<long unsigned int>(1), CLS / sizeof(T));
     }
-
+#if loopImpl == 0
     template <typename T>
     inline void multiplySubmatrix(const Matrix<T> &A, const Matrix<T> &B, Matrix<T> &C, const int i, const int j, const int k, const int stride)
     {
@@ -34,9 +36,9 @@ namespace cacheBlocks
                 for (int k = 0; k < K; k += stride)
                     multiplySubmatrix<T>(A, B, C, i, j, k, stride);
     }
-
+#else
     template <typename T>
-    void multiply2(const Matrix<T> &A, const Matrix<T> &B, Matrix<T> &C)
+    void multiply(const Matrix<T> &A, const Matrix<T> &B, Matrix<T> &C)
     {
         const int N = A.N;
         const int K = A.M;
@@ -50,4 +52,5 @@ namespace cacheBlocks
                             for (int kk = k; kk < k + stride; kk++)
                                 C(ii, jj) += A(ii, kk) * B(kk, jj);
     }
+#endif
 }
