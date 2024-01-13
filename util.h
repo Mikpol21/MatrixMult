@@ -19,6 +19,16 @@ public:
         delete[] data;
     }
 
+    T *getData()
+    {
+        return data;
+    }
+
+    const T *getData() const
+    {
+        return data;
+    }
+
     Matrix(const Matrix<T> &other) = delete;
     Matrix<T> &operator=(const Matrix<T> &other) = delete;
 
@@ -63,4 +73,10 @@ void printMatrix(Matrix<T> &A)
             std::cout << A(i, j) << "\t";
         std::cout << "\n";
     }
+}
+
+template <typename T>
+static constexpr int elemsInCLS()
+{
+    return std::max(static_cast<long unsigned int>(1), CLS / sizeof(T));
 }

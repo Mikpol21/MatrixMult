@@ -1,20 +1,20 @@
-# started on Fri Jan 12 17:00:37 2024
+# started on Fri Jan 12 20:59:52 2024
 
 
  Performance counter stats for './build/withoutLoops' (10 runs):
 
-             29,47 msec task-clock                #    0,042 CPUs utilized            ( +-1007,51% )
-                 5      context-switches          #    7,079 /sec                     ( +-228,68% )
+            418,65 msec task-clock                #    0,990 CPUs utilized            ( +-  0,72% )
+                 2      context-switches          #    4,735 /sec                     ( +-154,42% )
                  0      cpu-migrations            #    0,000 /sec                   
-             2 179      page-faults               #    3,085 K/sec                    ( +-  6,61% )
-       102 106 819      cycles                    #    0,145 GHz                      ( +-1148,08% )  (46,34%)
-       207 107 342      instructions              #    0,08  insn per cycle           ( +-1236,60% )  (59,90%)
-        34 872 122      branches                  #   49,372 M/sec                    ( +-425,65% )  (59,99%)
-           136 294      branch-misses             #    0,04% of all branches          ( +-459,47% )  (59,75%)
-        61 737 750      L1-dcache-loads           #   87,409 M/sec                    ( +-1357,30% )  (59,42%)
-           204 777      L1-dcache-load-misses     #    0,01% of all L1-dcache accesses  ( +-67993,68% )  (67,13%)
-            30 630      LLC-loads                 #   43,366 K/sec                    ( +-5879,53% )  (53,56%)
-            15 517      LLC-load-misses           #    0,38% of all LL-cache accesses  ( +-559,83% )  (53,81%)
+             4 222      page-faults               #    9,996 K/sec                    ( +-  0,01% )
+     1 856 867 542      cycles                    #    4,396 GHz                      ( +-  0,41% )  (50,32%)
+     3 314 026 264      instructions              #    1,78  insn per cycle           ( +-  0,10% )  (62,74%)
+       108 884 348      branches                  #  257,793 M/sec                    ( +-  2,40% )  (62,74%)
+           395 305      branch-misses             #    0,38% of all branches          ( +- 34,00% )  (62,74%)
+     1 681 154 191      L1-dcache-loads           #    3,980 G/sec                    ( +-  0,10% )  (62,74%)
+       509 968 497      L1-dcache-load-misses     #   30,36% of all L1-dcache accesses  ( +-  0,21% )  (62,11%)
+         9 248 796      LLC-loads                 #   21,897 M/sec                    ( +-  1,90% )  (49,68%)
+            88 909      LLC-load-misses           #    0,93% of all LL-cache accesses  ( +-  6,10% )  (49,68%)
 
-             0,707 +- 0,297 seconds time elapsed  ( +- 41,99% )
+           0,42292 +- 0,00297 seconds time elapsed  ( +-  0,70% )
 

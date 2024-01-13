@@ -1,5 +1,15 @@
-#include "cacheBlocks.h"
+
 #include <iostream>
+
+#include "util.h"
+#include "defaultImpl.h"
+#include "cacheBlocks.h"
+#include "withTranspose.h"
+#include "vectorized.h"
+
+#ifndef IMPLEMENTATION
+#define IMPLEMENTATION cacheBlocks
+#endif
 
 int main()
 {
@@ -8,7 +18,7 @@ int main()
     Matrix<int> C(1024, 1024);
     randomFill(A);
     randomFill(B);
-    cacheBlocks::multiply(A, B, C);
+    IMPLEMENTATION::multiply(A, B, C);
 
     int randI = rand() % 1024;
     int randJ = rand() % 1024;

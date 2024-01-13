@@ -7,34 +7,31 @@ execute_process(
     COMMAND getconf LEVEL1_DCACHE_LINESIZE
     OUTPUT_VARIABLE CACHE_LINE_SIZE
     OUTPUT_STRIP_TRAILING_WHITESPACE
-) 
+)
+
+
+find_package(benchmark REQUIRED)
 
 # Set common compilation flags
 set(COMMON_FLAGS -O3 -march=native -DCLS=${CACHE_LINE_SIZE})
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall --std=c++11 -O3 -fPIC")
 
 # Dummy executable targets (replace with your actual targets)
-add_executable(withLoops diffCode.cpp)
-add_executable(withoutLoops diffCode.cpp)
-add_executable(benchmarkWithLoops multBenchmark.cpp)
-add_executable(benchmarkWithoutLoops multBenchmark.cpp)
+add_executable(benchmarkMult multBenchmark.cpp)
+target_compile_options(benchmarkMult PRIVATE ${COMMON_FLAGS} -DloopImpl=0)
+target_link_libraries(benchmarkMult PRIVATE benchmark::benchmark)
 
-find_package(benchmark REQUIRED)
-
-# Set compiler flags for withLoops target
-target_compile_options(withLoops PRIVATE -g ${COMMON_FLAGS} -DloopImpl=1)
+foreach(arg IN ITEMS "defaultImpl" "cacheBlocks" "vectorized" "withTranspose")
+     message("Building variant: ${arg}")
+     add_executable(${arg} diffCode.cpp)
+     target_compile_options(${arg}  PRIVATE -g ${COMMON_FLAGS} -DIMPLEMENTATION=cacheBlocks)
+endforeach()
 
 # Set compiler flags for withoutLoops target
-target_compile_options(withoutLoops PRIVATE -g ${COMMON_FLAGS} -DloopImpl=0)
 
 # Set compiler flags for multBenchmark target
 
-target_compile_options(benchmarkWithLoops PRIVATE ${COMMON_FLAGS} -DloopImpl=1)
 
-target_compile_options(benchmarkWithoutLoops PRIVATE ${COMMON_FLAGS} -DloopImpl=0)
-
-target_link_libraries(benchmarkWithLoops PRIVATE benchmark::benchmark)
-target_link_libraries(benchmarkWithoutLoops PRIVATE benchmark::benchmark)
 
 
 # Add custom target to display compilation completion message

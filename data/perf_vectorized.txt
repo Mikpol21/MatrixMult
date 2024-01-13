@@ -1,0 +1,20 @@
+# started on Sat Jan 13 00:24:35 2024
+
+
+ Performance counter stats for './build/vectorized' (10 runs):
+
+            744,77 msec task-clock                #    1,087 CPUs utilized            ( +-  1,31% )
+                20      context-switches          #   29,260 /sec                     ( +- 73,69% )
+                 1      cpu-migrations            #    1,463 /sec                     ( +- 36,51% )
+             4 223      page-faults               #    6,178 K/sec                    ( +-  0,01% )
+     2 607 719 949      cycles                    #    3,815 GHz                      ( +-  0,74% )  (49,59%)
+     3 315 028 094      instructions              #    1,34  insn per cycle           ( +-  0,16% )  (62,47%)
+       102 893 652      branches                  #  150,533 M/sec                    ( +-  0,99% )  (62,97%)
+           822 378      branch-misses             #    0,79% of all branches          ( +-  5,94% )  (62,94%)
+     1 706 523 191      L1-dcache-loads           #    2,497 G/sec                    ( +-  0,15% )  (62,96%)
+       517 470 467      L1-dcache-load-misses     #   30,59% of all L1-dcache accesses  ( +-  0,29% )  (62,76%)
+         9 446 895      LLC-loads                 #   13,821 M/sec                    ( +-  2,86% )  (49,39%)
+           619 025      LLC-load-misses           #    6,21% of all LL-cache accesses  ( +-  4,09% )  (49,38%)
+
+           0,68502 +- 0,00967 seconds time elapsed  ( +-  1,41% )
+

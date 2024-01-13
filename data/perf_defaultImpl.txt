@@ -1,0 +1,20 @@
+# started on Sat Jan 13 00:25:54 2024
+
+
+ Performance counter stats for './build/defaultImpl' (50 runs):
+
+            485,89 msec task-clock                #    0,979 CPUs utilized            ( +-  0,30% )
+                 4      context-switches          #    8,063 /sec                     ( +- 32,32% )
+                 0      cpu-migrations            #    0,000 /sec                   
+             4 224      page-faults               #    8,515 K/sec                    ( +-  0,00% )
+     1 816 170 952      cycles                    #    3,661 GHz                      ( +-  0,18% )  (50,05%)
+     3 322 525 557      instructions              #    1,79  insn per cycle           ( +-  0,05% )  (62,96%)
+       106 322 395      branches                  #  214,331 M/sec                    ( +-  0,70% )  (62,96%)
+           397 144      branch-misses             #    0,39% of all branches          ( +-  8,57% )  (62,96%)
+     1 684 504 347      L1-dcache-loads           #    3,396 G/sec                    ( +-  0,05% )  (62,96%)
+       503 286 079      L1-dcache-load-misses     #   29,81% of all L1-dcache accesses  ( +-  0,10% )  (62,29%)
+         8 954 422      LLC-loads                 #   18,051 M/sec                    ( +-  1,19% )  (49,39%)
+            35 969      LLC-load-misses           #    0,37% of all LL-cache accesses  ( +- 12,50% )  (49,39%)
+
+           0,49653 +- 0,00148 seconds time elapsed  ( +-  0,30% )
+

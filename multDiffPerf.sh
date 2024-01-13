@@ -8,7 +8,7 @@ if [[ $1 == "-c" ]]; then
     popd
 fi
 
-bin_dir=$(find . -type f -name "withLoops" -o -name "withoutLoops" -exec dirname {} \; | head -n 1)
+bin_dir=$(find . -type f -name $1 -o -name $2 -exec dirname {} \; | head -n 1)
 
 # Check if binaries are found
 if [ -z "$bin_dir" ]; then
@@ -20,17 +20,17 @@ PURPLE='\033[0;35m'
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
-repeats=10
+repeats=50
 
-echo -e "${PURPLE}Running perf stat with loops...${NC}"
-perf stat -d -r ${repeats} -o ${prefix}perf_with_loops.txt ${bin_dir}/withLoops > /dev/null
+echo -e "${PURPLE}Running perf stat $1...${NC}"
+perf stat -d -r ${repeats} -o ${prefix}perf_$1.txt ${bin_dir}/$1 > /dev/null
 
 
-echo -e "${PURPLE}Running perf stat without loops...${NC}"
-perf stat -d -r ${repeats} -o ${prefix}perf_without_loops.txt ${bin_dir}/withoutLoops > /dev/null
+echo -e "${PURPLE}Running perf stat $2...${NC}"
+perf stat -d -r ${repeats} -o ${prefix}perf_$2.txt ${bin_dir}/$2 > /dev/null
 
 # Generate cache difference
 echo -e "${PURPLE}Generating cache difference...${NC}"
-diff -y --width=250 data/perf_with_loops.txt data/perf_without_loops.txt
+diff -y --width=250 ${prefix}perf_$1.txt ${prefix}perf_$2.txt
 
 echo -e "${GREEN}Script execution completed. Check the 'data' directory for the results.${NC}"
