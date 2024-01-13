@@ -21,7 +21,7 @@ add_executable(benchmarkMult multBenchmark.cpp)
 target_compile_options(benchmarkMult PRIVATE ${COMMON_FLAGS} -DloopImpl=0)
 target_link_libraries(benchmarkMult PRIVATE benchmark::benchmark)
 
-foreach(arg IN ITEMS "defaultImpl" "cacheBlocks" "vectorized" "withTranspose")
+foreach(arg IN ITEMS "defaultImpl" "cacheBlocks" "vectorized" "withTranspose" "drepper")
      message("Building variant: ${arg}")
      add_executable(${arg} diffCode.cpp)
      target_compile_options(${arg}  PRIVATE -g ${COMMON_FLAGS} -DIMPLEMENTATION=cacheBlocks)

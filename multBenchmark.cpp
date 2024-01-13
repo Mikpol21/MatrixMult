@@ -4,6 +4,7 @@
 #include "cacheBlocks.h"
 #include "withTranspose.h"
 #include "vectorized.h"
+#include "drepper.h"
 
 constexpr int N = 512;
 constexpr int K = 512;
@@ -55,6 +56,12 @@ static void BM_withInPlaceTranspose(benchmark::State &state)
     }
 }
 BENCHMARK(BM_withInPlaceTranspose);
+
+static void BM_drepper(benchmark::State &state)
+{
+    multiplyMatricesBenchmark<N, K, M, float>(state, drepper::multiply);
+}
+BENCHMARK(BM_drepper);
 
 static void BM_Vectorized(benchmark::State &state)
 {
